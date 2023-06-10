@@ -1,8 +1,32 @@
+<!DOCTYPE html>
 <html>
 
     <body>
 
-        <h1>This is Home Page</h1>
+        <form method="post" action="/predict">
+
+            <!type = datatype     name = variable name             placeholder = Help Text in Textbox        required = Mandatory or Optional field>
+            <!input type="text"    name="experience"                placeholder="Exp"                         required="required">
+            <!input type="number"  name="phone"                     placeholder="mobile number"               required="required">
+            <!input type="email"   name="email"                     placeholder="mail"                        required="required">
+
+            <input type="number"  name="volatile_acidity"       placeholder="0 - 2"          required="required"    step="0.01">
+            <input type="number"  name="residual_sugar"         placeholder="0 - 16"         required="required"    step="0.01">
+            <input type="number"  name="chlorides"              placeholder="0 - 1"          required="required"    step="0.01">
+            <input type="number"  name="total_sulfur_dioxide"   placeholder="0 - 300"        required="required"    step="0.01">
+            <input type="number"  name="ph"                     placeholder="2.5 - 4.0"      required="required"    step="0.01">
+            <input type="number"  name="sulphates"              placeholder="0 - 2"          required="required"    step="0.01">
+            <input type="number"  name="alcohol"                placeholder="8 - 15"         required="required"    step="0.01">
+
+
+            <button>
+                Submit
+            </button>
+
+
+
+
+        </form>
 
 
     </body>
