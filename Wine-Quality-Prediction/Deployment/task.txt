@@ -1,0 +1,4 @@
+/gallery   -----> Welcome to Gallery Page
+/  -----> Welcome to Home Page
+/cart  -----> Welcome to Cart Page
+/contact  -----> Welcome to Contact Page
