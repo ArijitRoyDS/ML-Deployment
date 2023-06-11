@@ -25,29 +25,29 @@ Step 1: Log In to AWS and Create a Virtual Machine
 7) Under SSH Client tab, copy the Public DNS under item no 4
 
 Step 2: Generate Private Key using PuTTY Key Generator
-	- Launch PuTTY Key Generator on your local machine
-	- Click on Load and browse for the .pem file generated in Step 1
-	- Click on Save Private Key and save the Putty Key (*.ppk) locally
+1) Launch PuTTY Key Generator on your local machine
+2) Click on Load and browse for the .pem file generated in Step 1
+3) Click on Save Private Key and save the Putty Key (*.ppk) locally
 
 Step 3: Mount the Virtual Machine on WinSCP Client using the Private Key:
-	- Launch WinSCP on local machine
-	- Click on New Site and fill up the Host Name with the Public DNS & user name copied in Step 1
-	- Click on Advanced >> SSH >> Authentication and upload the *.ppk file generated in Step 2
-	- Click on OK and Login
+1) Launch WinSCP on local machine
+2) Click on New Site and fill up the Host Name with the Public DNS & user name copied in Step 1
+3) Click on Advanced >> SSH >> Authentication and upload the *.ppk file generated in Step 2
+4) Click on OK and Login
 
 Step 4: Connect to the Virtual Machine using PuTTY
-	- Launch PuTTY on local machine and fill up the Host Name with the Public DNS copied in Step 1
-	- On the left side menu, click on Connection >> SSH >> Auth >> Credentials and upload the Private Key generated in Step 2
-	- Login with the default username 'ubuntu'. Password is not required.
-	- Install all required Python Modules and execute the application on the virtual machine to test if everything works fine
+1) Launch PuTTY on local machine and fill up the Host Name with the Public DNS copied in Step 1
+2) On the left side menu, click on Connection >> SSH >> Auth >> Credentials and upload the Private Key generated in Step 2
+3) Login with the default username 'ubuntu'. Password is not required.
+4) Install all required Python Modules and execute the application on the virtual machine to test if everything works fine
 
 Step 5: Configure Security Groups on AWS
-	- Login to your AWS and under Network & Security, click on Security Groups
-	- Click on Create Security Group. Provide a Name and Description
-	- Under Inbound Rule, click on Add Rule. 
-	- Under Type, select 'All Traffic' & under Source, select 'Anywhere IPv4'. Click on Create Security Group.
-	- Go to Network & Security >> Network Interfaces. Right click on Security Group Names >> Change Security Group
-	- Choose the security group that we just created and remove the default security group pre-assigned
+1) Login to your AWS and under Network & Security, click on Security Groups
+2) Click on Create Security Group. Provide a Name and Description
+3) Under Inbound Rule, click on Add Rule. 
+4) Under Type, select 'All Traffic' & under Source, select 'Anywhere IPv4'. Click on Create Security Group.
+5) Go to Network & Security >> Network Interfaces. Right click on Security Group Names >> Change Security Group
+6) Choose the security group that we just created and remove the default security group pre-assigned
 
 All the setup is done. 
 
