@@ -16,13 +16,13 @@ Prerequisites:
 Steps for deployment:
 
 Step 1: Log In to AWS and Create a Virtual Machine
-	1) Search for EC2 and click on Instances >> Launch an Instance
-	2) Provide a name and choose Ubuntu Server 20.04 LTS as the OS
-	3) Create a new Key Pair, Provide a name, Type = RSA, File Format = .pem and save it locally
-	4) Click on Launch Instance >> Connect to Instance >> Connect
-	5) Go to EC2 >> Instances (running), select the instance and click on Connect
-	6) Under 'EC2 Instance Connect' tab, there is a user name 'ubuntu' note it.
-	7) Under SSH Client tab, copy the Public DNS under item no 4
+1) Search for EC2 and click on Instances >> Launch an Instance
+2) Provide a name and choose Ubuntu Server 20.04 LTS as the OS
+3) Create a new Key Pair, Provide a name, Type = RSA, File Format = .pem and save it locally
+4) Click on Launch Instance >> Connect to Instance >> Connect
+5) Go to EC2 >> Instances (running), select the instance and click on Connect
+6) Under 'EC2 Instance Connect' tab, there is a user name 'ubuntu' note it.
+7) Under SSH Client tab, copy the Public DNS under item no 4
 
 Step 2: Generate Private Key using PuTTY Key Generator
 	- Launch PuTTY Key Generator on your local machine
